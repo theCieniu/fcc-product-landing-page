@@ -19,12 +19,15 @@ body {
 /*#13: The navbar should always be
 at the top of the viewport.*/
 
-header#header {
-
+#header {
+  background-color: #e3abab;
+  display:flex;
+  flex-direction: row;
 }
 
 img#header-img {
-
+  max-width: 25vw;
+  margin: 1em;
 }
 
 nav#navbar {
