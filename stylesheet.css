@@ -1,3 +1,5 @@
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Kaushan Script', cursive;*/
 
 /*#14: My product landing page should have
 at least one media query.*/
@@ -12,21 +14,37 @@ utilize CSS flexbox at least once.*/
 body {
   width: 100vw;
   margin: 0;
+  font-family: 'Raleway', sans-serif
 }
 
+h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+p {
+  margin: 2rem;
+}
+
+.foto {
+  width: 100vw;
+}
 /* ========= NAVIGATION =======*/
 
 /*#13: The navbar should always be
 at the top of the viewport.*/
 
 #header {
+  width: 100vw;
+  margin: 0;
   background-color: #e3abab;
   display:flex;
   flex-direction: row;
 }
 
-img#header-img {
-  max-width: 25vw;
+#header-img {
+  max-height: 2rem;
   margin: 1em;
 }
 
@@ -35,7 +53,18 @@ nav#navbar {
 }
 
 
+
 /* ========= ????????  =======*/
+
+#about {
+  display: flex;
+}
+
+.portrait {
+  max-width: 80vw;
+  margin: 1rem;
+
+}
 
 /* ========= ????????  =======*/
 

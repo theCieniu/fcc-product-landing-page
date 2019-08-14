@@ -11,6 +11,7 @@
   <meta name="description" content="Florist from Gdańsk - bucqets, pot plants, wreaths">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" href="favicon.png" type="image/ico">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,18 +40,57 @@
     </nav>
   </header>
 
-
+  <h1>Rossa Florist</h1>
 
 
   <main>
     <section id="About">
+      <div class="about">
+        <h2>About Rossa</h2>
+        <p>Welcome to the Rossa Florist! Breath in the scent of the flowers, touch smooth leaves and choose a perfect plant or wreatch for you or your beloved family and friends. </p>
+          </div>
+          <img src="images/rossa-florist-portrait.jpg" class="portrait">
+
     </section>
+
+    <img src="images/rossa-florist-flowersa.jpg" class="foto">
 
     <section id="Flowers">
+      <h2>Choose flowers: </h2>
+      <img src="images/bucquet.jpg" class="flowers">
+      <img src="images/pot-flowers.jpg" class="flowers">
+      <img src="images/wreath.jpg" class="flowers">
+
 
     </section>
 
+
+    <img src="images/rossa-florist-flowers-3a.jpg" class="foto">
+
+
+
+
+
+    <section>
+      <h2>Watch my video: </h2>
+      https://www.youtube.com/watch?v=is-m8felEuc
+      <!--#6: I can watch an embedded product video with id="video" -->
+    </section>
+
+    <img src="images/rossa-flowershop-streeta.jpg" class="foto">
+
+  </main>
+
+
+
+  <footer>
+    <p>GOOGLE MAPS</p>
+    <p>Visit us!<br>
+      Rossa Florist<br>
+      Gdańsk, ul. Azaliowa 1<br>
+      tel. 123 456 789</p>
     <section id="contact-form">
+
       <!--#7: My landing page has a
   form element with a corresponding id="form" -->
       <form id="form" action="" method="post">
@@ -60,37 +100,24 @@
     placeholder text to let the user know what the field is for. -->
         <!--#10: The #email input field uses HTML5 validation
     to confirm that the entered text is an email address. -->
-        <label>
-          <input type="email" id="email" placeholder="E-mail">
-        </label>
+        <label>Name:
+          <input type="text" id="name" placeholder="Name">
+        </label><br>
 
-        <label>
+        <label>E-mail:
           <input type="email" id="email" placeholder="E-mail">
-        </label>
+        </label><br>
         <!--#11: Within the form, there is a
         submit input with a corresponding id="submit". -->
         <!-- #12: When I click the #submit element,
         the email is submitted to a static page
         (use this mock URL: https://www.freecodecamp.com/email-submit)
         that confirms the email address was entered and that it posted successfully. -->
-        <button type="submit" name="submit">
+        <label>How can we help you? <input type="text" id="text" placeholder="Your Message"></label>
+        <button type="submit" id="submit">Send!</button>
       </form>
 
 
-
-
-    </section>
-
-<section>
-  https://www.youtube.com/watch?v=is-m8felEuc
-    <!--#6: I can watch an embedded product video with id="video" -->
-</section>
-
-  </main>
-
-
-
-  <footer>
   </footer>
 
   <script src="script.js"></script>
