@@ -1,12 +1,9 @@
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Kaushan Script', cursive;*/
-
 /*#14: My product landing page should have
 at least one media query.*/
-
 /*#15: My product landing page should
 utilize CSS flexbox at least once.*/
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -14,7 +11,10 @@ utilize CSS flexbox at least once.*/
 body {
   width: 100vw;
   margin: 0;
-  font-family: 'Raleway', sans-serif
+  font-family: 'Raleway', sans-serif;
+  --darkpinkish: #5f3939;
+  --lightpinkish: #e3abab;
+  color: var(--darkpinkish);
 }
 
 h2 {
@@ -27,53 +27,143 @@ p {
   margin: 2rem;
 }
 
-.foto {
-  width: 100vw;
+img {
+  display: block;
 }
-/* ========= NAVIGATION =======*/
 
+/* ========= NAVIGATION =======*/
 /*#13: The navbar should always be
 at the top of the viewport.*/
-
 #header {
   width: 100vw;
   margin: 0;
   background-color: #e3abab;
-  display:flex;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
   flex-direction: row;
+  position: fixed;
+  z-index: 99;
 }
 
 #header-img {
-  max-height: 2rem;
-  margin: 1em;
+  max-height: 3rem;
+  margin: 1em 2em;
 }
 
-nav#navbar {
+nav#navbar {}
 
+/* ========= H1 BANNER  =======*/
+.h1 {
+  width: 100vw;
+  height: 15rem;
+  background: white url(images/rossa-pattern-element.png) repeat bottom left scroll;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-top: 7rem;
+  color: var(--darkpinkish);
+  align-self: center;
+  text-align: center;
+}
 
-
-/* ========= ????????  =======*/
-
+/* ========= ABOUT  =======*/
 #about {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .portrait {
-  max-width: 80vw;
+  max-width: 75vw;
   margin: 1rem;
-
+  border-radius: 50%;
+  align-self: center;
 }
 
-/* ========= ????????  =======*/
+/* ========= CHOOSE FLOWERS  =======*/
+#flowers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
 
-/* ========= ????????  =======*/
+.flowers {
+  border-radius: 50%;
+  margin: 1rem 0;
+  max-width: 25vw;
+  align-self: center;
+}
 
+figcaption {
+  text-align: center;
+  background-color: var(--lightpinkish);
+  color: white;
+  padding: 0.5em;
+  margin: 0;
+}
 
+/* ========= VIDEO  =======*/
+#video {
+  width: 84vw;
+  height: 48vw;
+  margin: auto;
+  display: block;
+  margin-bottom: 3rem;
+}
 
+/* ========= BACGROUND PHOTOS  =======*/
+.foto {
+  width: 100vw;
+  height: 50vw;
+}
+
+#photo1 {
+  background: white url(images/rossa-florist-flowersa.jpg) no-repeat top fixed;
+  background-size: cover;
+}
+
+#photo2 {
+  background: white url(images/rossa-florist-flowers-3a.jpg) no-repeat top fixed;
+  background-size: cover;
+}
+
+#photo3 {
+  background: white url(images/rossa-flowershop-streeta.jpg) no-repeat top fixed;
+  background-size: cover;
+}
+
+/* ========= FOOTER  =======*/
+footer {
+  background: white url(images/rossa-pattern-element.png) repeat top fixed;
+  margin: 0;
+}
+
+#contact-form {
+  display: flex;
+}
 
 /* ========= MEDIA QUERY ========*/
 @media (min-width:1000px) {
 
+.portrait {
+  max-width: 35vw;
 }
+
+#about {
+  flex-wrap: nowrap;
+  margin: 3rem;
+}
+
+.foto {
+  width: 100vw;
+  max-height: 35vw;
