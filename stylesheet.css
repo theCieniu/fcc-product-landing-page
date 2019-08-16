@@ -31,6 +31,10 @@ img {
   display: block;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 /* ========= NAVIGATION =======*/
 /*#13: The navbar should always be
 at the top of the viewport.*/
@@ -85,6 +89,7 @@ h1 {
   margin: 1rem;
   border-radius: 50%;
   align-self: center;
+  box-shadow: 5px 5px 1em rgba(0, 0, 0, .25)
 }
 
 /* ========= CHOOSE FLOWERS  =======*/
@@ -100,7 +105,7 @@ h1 {
 .flowers {
   border-radius: 50%;
   margin: 1rem 0;
-  max-width: 25vw;
+  max-width: 70vw;
   align-self: center;
 }
 
@@ -110,6 +115,17 @@ figcaption {
   color: white;
   padding: 0.5em;
   margin: 0;
+  border-radius: 5%;
+  box-shadow: 5px 5px 1em rgba(0, 0, 0, .25)
+}
+
+figcaption:hover {
+  color: var(--darkpinkish);
+}
+
+.flowers:hover {
+  transform: scale(1.5);
+  box-shadow: 10px 10px 2em rgba(0, 0, 0, .3);
 }
 
 /* ========= VIDEO  =======*/
@@ -143,27 +159,94 @@ figcaption {
 }
 
 /* ========= FOOTER  =======*/
-footer {
-  background: white url(images/rossa-pattern-element.png) repeat top fixed;
+#contact-form {
   margin: 0;
+  background: white url(images/rossa-pattern-element.png) repeat top fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
 }
 
-#contact-form {
-  display: flex;
+form, address {
+  padding: 1em;
+  margin-top: 1em;
+  box-shadow: inset 0px 0px 0px 1000px white,
+    1em 1em 1em rgba(0, 0, 0, .25);
+  border-radius: 10%;
+}
+
+input {
+  margin: 1em;
+}
+
+#submit {
+  text-align: center;
+  background-color: var(--lightpinkish);
+  color: white;
+  padding: 1em;
+  border-radius: 5%;
+  border-style: none;
+  box-shadow: 5px 5px 1em rgba(0, 0, 0, .25)
+}
+
+#submit:hover {
+  color: var(--darkpinkish);
+}
+
+.googlemaps {
+  width: 80vw;
+  height: 60vw;
+  margin: 1em;
+  border-radius: 10%;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, .25);
+}
+
+.autor {
+  margin: 0;
+  padding: 1em;
+  z-index: 99;
+  background-color: var(--lightpinkish);
+  color: white;
+  text-align: center;
 }
 
 /* ========= MEDIA QUERY ========*/
+@media (min-width:500px) {
+  .flowers {
+    max-width: 35vw;
+  }
+}
+
+@media (min-width:700px) {
+  .googlemaps {
+    max-width: 30vw;
+    max-height: 40vw;
+  }
+}
+
 @media (min-width:1000px) {
+  .portrait {
+    max-width: 35vw;
+  }
 
-.portrait {
-  max-width: 35vw;
+  .flowers {
+    max-width: 25vw;
+  }
+
+  #about {
+    flex-wrap: nowrap;
+    margin: 3rem;
+  }
+
+  .foto {
+    width: 100vw;
+    max-height: 35vw;
+  }
+
+  .googlemaps {
+    max-width: 25vw;
+    max-height: 25vw;
+  }
 }
-
-#about {
-  flex-wrap: nowrap;
-  margin: 3rem;
-}
-
-.foto {
-  width: 100vw;
-  max-height: 35vw;

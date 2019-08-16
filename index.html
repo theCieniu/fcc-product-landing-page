@@ -61,14 +61,17 @@
 
     <h2>Choose flowers: </h2>
     <section id="flowers">
-      <figure><img src="images/bucquet.jpg" class="flowers">
-        <figcaption>Bucquets</figcaption>
+      <figure><a href=""><img src="images/bucquet.jpg" class="flowers">
+          <figcaption>Bucquets</figcaption>
+        </a>
       </figure>
-      <figure><img src="images/pot-flowers.jpg" class="flowers">
-        <figcaption>Pot flowers</figcaption>
+      <figure><a href=""><img src="images/pot-flowers.jpg" class="flowers">
+          <figcaption>Pot flowers</figcaption>
+        </a>
       </figure>
-      <figure><img src="images/wreath.jpg" class="flowers">
-        <figcaption>Wreaths</figcaption>
+      <figure><a href=""><img src="images/wreath.jpg" class="flowers">
+          <figcaption>Wreaths</figcaption>
+        </a>
       </figure>
     </section>
 
@@ -90,6 +93,9 @@
     <section class="foto" id="photo3">
     </section>
 
+    <p>Disclaimer! This is just an excercise project, the Rossa Florist presented here is fake. Although address and dicections presented below indicates real flower shop "KWIATY", that is just my favourite in Gdańsk and I friendly recommend
+      visiting this place if you need flowers. Keep in mind that the owner of original "Kwiaty" does not know me nor know anything about this website.
+
   </main>
 
 
@@ -107,11 +113,11 @@
         <!--#10: The #email input field uses HTML5 validation
     to confirm that the entered text is an email address. -->
         <label>Name:
-          <input type="text" id="name" placeholder="Name">
+          <input type="text" id="name" name="name" placeholder="Name">
         </label><br>
 
         <label>E-mail:
-          <input type="email" id="email" name="email" placeholder="E-mail">
+          <input type="email" id="email" name="email" name="email" placeholder="E-mail">
         </label><br>
         <!--#11: Within the form, there is a
         submit input with a corresponding id="submit". -->
@@ -119,19 +125,21 @@
         the email is submitted to a static page
         (use this mock URL: https://www.freecodecamp.com/email-submit)
         that confirms the email address was entered and that it posted successfully. -->
-        <label>How can we help you? <br><input type="text" id="text" placeholder="Your Message"></label>
+        <label>How can we help you? <br><input type="textarea" id="msg" name="msg" placeholder="Your Message"></label>
         <br>
         <input type="submit" id="submit"></input>
       </form>
 
 
-      <p>Visit us!<br>
+      <address>Visit us!<br>
+        KWIATY<br>
         Rossa Florist<br>
-        Gdańsk, ul. Azaliowa 1<br>
-        tel. 123 456 789</p>
-      <div>GOOGLE MAPS</div>
+        Gdańsk, ul. Polanki 97<br>
+        tel. 123 456 789</address>
+      <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488.3827057924194!2d18.574312854669834!3d54.389616837693815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752081307efb%3A0x42600e0c0157bd63!2sKwiaty!5e0!3m2!1spl!2spl!4v1565975336909!5m2!1spl!2spl"
+        style="border:0" allowfullscreen></iframe>
     </section>
-        <p>Created by Paulina Weiher 2019 GITHUB</p>
+    <p class="autor">Created by Paulina Weiher 2019 GITHUB</p>
 
   </footer>
 
