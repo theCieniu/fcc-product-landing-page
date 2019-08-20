@@ -43,19 +43,31 @@ at the top of the viewport.*/
   margin: 0;
   background-color: #e3abab;
   display: flex;
-  justify-content: space-between;
-  align-self: center;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
   z-index: 99;
 }
 
 #header-img {
   max-height: 3rem;
-  margin: 1em 2em;
+  max-width: 35vw;
+  }
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-nav#navbar {}
+.burger div {
+  background-color: white;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px;
+  align-self: center;
+}
 
 /* ========= H1 BANNER  =======*/
 .h1 {
@@ -228,6 +240,9 @@ input {
     max-height: 40vw;
   }
 
+.burger {
+  display: none;
+}
 
 }
 
@@ -235,7 +250,7 @@ input {
   h1 {
     font-size: 3rem;
   }
-  
+
   .portrait {
     max-width: 35vw;
   }
