@@ -68,7 +68,7 @@ nav#navbar {}
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 7rem;
   color: var(--darkpinkish);
   align-self: center;
@@ -227,9 +227,15 @@ input {
     max-width: 30vw;
     max-height: 40vw;
   }
+
+
 }
 
 @media (min-width:1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
   .portrait {
     max-width: 35vw;
   }
