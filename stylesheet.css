@@ -10,11 +10,13 @@ utilize CSS flexbox at least once.*/
 
 body {
   width: 100vw;
+  max-width: 100vw;
   margin: 0;
   font-family: 'Raleway', sans-serif;
   --darkpinkish: #5f3939;
   --lightpinkish: #e3abab;
   color: var(--darkpinkish);
+  overflow-x: hidden;
 }
 
 h2 {
@@ -40,6 +42,7 @@ a, a:hover {
 at the top of the viewport.*/
 #header {
   width: 100vw;
+  max-width: 100vw;
   margin: 0;
   background-color: #e3abab;
   display: flex;
@@ -51,7 +54,8 @@ at the top of the viewport.*/
 }
 
 #header-img {
-  max-height: 3rem;
+  max-height: 5rem;
+  margin: 0.5rem;
   max-width: 35vw;
   }
 
@@ -60,6 +64,35 @@ at the top of the viewport.*/
   justify-content: space-around;
   align-items: center;
 }
+
+nav ol {
+  position: absolute;
+  right: 0;
+  top: 5vh;
+  height: 50vh;
+  width: 40vw;
+  background-color: var(--lightpinkish);
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: var(--darkpinkish);
+  border-radius: 10%;
+  }
 
 .burger div {
   background-color: white;
@@ -71,7 +104,7 @@ at the top of the viewport.*/
 
 /* ========= H1 BANNER  =======*/
 .h1 {
-  width: 100vw;
+  width: 100%;
   height: 15rem;
   background: white url(images/rossa-pattern-element.png) repeat bottom left scroll;
   display: flex;
@@ -243,6 +276,24 @@ input {
 .burger {
   display: none;
 }
+
+
+nav ol {
+  position:inherit;
+  height: 10vh;
+  width: 60vw;
+  background-color: var(--lightpinkish);
+  padding-right: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav a {
+  letter-spacing: 3px;
+  }
 
 }
 
